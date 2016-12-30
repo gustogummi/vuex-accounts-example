@@ -13,9 +13,14 @@ import { mapState } from 'vuex'
 
 export default {
   name: 'users',
+  data() {
+    return {
+      userHelper: []
+    }
+  },
   meteor: {
     subscribe: {
-      'users': []
+      'users': [],
     },
     usersHelper() {
     	let value = Meteor.users.find({})
