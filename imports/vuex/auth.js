@@ -20,7 +20,6 @@ const authModule = {
     	})
     },
     submitLoginForm({commit, state}, formData) {
-      console.log('username: ' + formData.username + ', password: ' + formData.password)
     	Meteor.loginWithPassword(formData.username, formData.password, error => {
       	error ? console.log(error.reason) : console.log('user logged in')
     	})
