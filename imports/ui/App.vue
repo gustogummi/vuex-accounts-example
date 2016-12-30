@@ -22,7 +22,6 @@ export default {
   meteor: {
     meteorUser() {
       this.$store.commit('updateUser', Meteor.user())
-      return Meteor.user()
     }
   }
 }
