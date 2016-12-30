@@ -7,7 +7,7 @@ Just follow standard path of installing any Meteor project:
 
 In console:
 ```
-$ git clone https://github.com/gustogummie/vuex-accounts-example.git
+$ git clone https://github.com/gustogummi/vuex-accounts-example.git
 $ cd vuex-accounts-example
 $ meteor npm install
 $ meteor
