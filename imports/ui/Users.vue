@@ -10,11 +10,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      usersHelper: []
-    }
-  },
   meteor: {
     subscribe: {
       'users': [],
