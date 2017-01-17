@@ -15,9 +15,7 @@ export default {
       'users': [],
     },
     usersHelper() {
-      let value = Meteor.users.find({})
-      this.$store.commit('updateUsers', value.fetch())
-      return value
+      return this.$store.commit('updateUsers', Meteor.users.find({}).fetch())
     }
   },
   computed: {
