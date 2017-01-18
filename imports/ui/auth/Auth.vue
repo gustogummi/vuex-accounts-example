@@ -17,7 +17,6 @@ import Logout from '/imports/ui/auth/Logout.vue'
 import Register from '/imports/ui/auth/Register.vue'
 
 export default {
-  name: 'auth',
   components: {
     login: Login,
     logout: Logout,
