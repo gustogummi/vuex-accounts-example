@@ -4,9 +4,8 @@
 
 <script>
 export default {
-  name: 'logout',
   methods: {
-  	logout() {
+    logout() {
       this.$store.dispatch('logout')
   	}
   }
