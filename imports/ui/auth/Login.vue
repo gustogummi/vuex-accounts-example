@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import {Meteor} from 'meteor/meteor'
-
 export default {
   name: 'login',
   data() {
@@ -26,7 +24,7 @@ export default {
   },
   methods: {
     submitForm() {
-  		this.$store.dispatch('submitLoginForm', this.formData)
+      this.$store.dispatch('submitLoginForm', this.formData)
     }
   }
 }
