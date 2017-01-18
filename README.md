@@ -31,9 +31,7 @@ But there is one thing you have to pay attention to. When you return in a Meteor
       'users': []
     },
     usersHelper() {
-    	let value = Meteor.users.find({})
-      this.$store.commit('updateUsers', value.fetch())
-      return value
+      return this.$store.commit('updateUsers', Meteor.users.find({}).fetch())
     }
   },
 ```
