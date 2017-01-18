@@ -1,14 +1,14 @@
 <template>
-<div>
-	<div v-if="user">
-		<p>Hello {{user.username}}</p>
-		<logout v-if="user"></logout>
-	</div>
-	<div class="auth" v-if="!user">
-		<login></login>
-		<register></register>
-	</div>
-</div.auth>
+  <div>
+    <div v-if="user">
+      <p>Hello {{user.username}}</p>
+      <logout v-if="user"></logout>
+    </div>
+    <div class="auth" v-if="!user">
+      <login></login>
+      <register></register>
+    </div>
+  </div.auth>
 </template>
 
 <script>
@@ -19,9 +19,9 @@ import Register from '/imports/ui/auth/Register.vue'
 export default {
   name: 'auth',
   components: {
-  	login: Login,
-  	logout: Logout,
-  	register: Register
+    login: Login,
+    logout: Logout,
+    register: Register
   },
   computed: {
     user() {
@@ -33,12 +33,12 @@ export default {
 
 <style>
 .auth > div {
-	display: inline-flex;
+  display: inline-flex;
 }
 .auth > div:first-child {
-	padding-right: 1rem;
+  padding-right: 1rem;
 }
 input, label {
-	display: block;
+  display: block;
 }
 </style>
